@@ -1,4 +1,6 @@
-
+#my-container{
+  max-width: 1008px;
+}
 .nav-top{
   display: flex;
   justify-content: space-between;
@@ -13,7 +15,7 @@
   width: 150px;
 }
 .logo-area img{
-  width: 120px;
+  width: 100px;
   display: block;
   margin: auto;
   cursor: pointer;
@@ -70,7 +72,7 @@
   align-items: center;
   padding-top: 60px;
   transition: 0.5s;
-  z-index: 1;
+  z-index: 2;
   overflow-x: hidden;
 }
 .side-nav div{
@@ -154,7 +156,7 @@
     top: 10px;
     left: 0;
     right: 0;
-    width: 100px;
+    width: 80px;
   }
   .nav-top{
     margin-bottom: 60px;

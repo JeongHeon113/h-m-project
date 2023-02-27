@@ -1,5 +1,4 @@
 import { Container } from 'react-bootstrap';
-import './App.css';
 import Nav from './component/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SideNav from './component/SideNav';
@@ -8,6 +7,7 @@ import { Route, Routes } from 'react-router-dom';
 import AllProducts from './page/AllProducts';
 import Login from './page/Login';
 import PrivateRoute from './route/PrivateRoute';
+import './App.css';
 
 
 //1. 전체상품페이지, 고르인, 상품상세페이지
@@ -25,7 +25,7 @@ function App() {
   const [sideWidth,setSideWidth]=useState(0)
   const menuList=['여성','Divided','남성','신생아/유아','아동','H&M Home','Sale','지속가능성']
   return (
-    <Container>
+    <Container id='my-container'>
       <SideNav menuList={menuList} sideWidth={sideWidth} setSideWidth={setSideWidth}/>
       <Nav menuList={menuList} authenticate={authenticate} setAuthenticate={setAuthenticate} setSideWidth={setSideWidth}/>
       <Routes>
